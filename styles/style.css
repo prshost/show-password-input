@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma;
+    direction: rtl;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input {
+    font-family: Tahoma;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.pass {
+    position: relative;
+}
+span {
+    width: 20px;
+    height: 11px;
+    background: radial-gradient(#2e2e2e , #fff,#ffffff);
+    border-radius: 100%;
+    border: 1px solid #6f6f6f;
+    position: absolute;
+    transform: translate(-7px, 10px);
+    right: 0;
+    cursor: pointer;
+    
+}
+span.active::before {
+    content: "";
+    width: 24px;
+    height: 0px;
+    border: 1px solid #444343;
+    display: block;
+    transform: rotate(29deg) translate(5px, 2px);
+}
+.content input {
+    width: 220px;
+    height: 30px;
+    outline: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 2px solid #058cf4;
+    direction: ltr;
+}
